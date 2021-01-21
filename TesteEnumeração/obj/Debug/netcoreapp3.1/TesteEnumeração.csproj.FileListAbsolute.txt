@@ -1,0 +1,13 @@
+C:\Users\user\Desktop\Gui\C#\Repos\ws-vs2019\TesteEnumeração\TesteEnumeração\bin\Debug\netcoreapp3.1\TesteEnumeração.exe
+C:\Users\user\Desktop\Gui\C#\Repos\ws-vs2019\TesteEnumeração\TesteEnumeração\bin\Debug\netcoreapp3.1\TesteEnumeração.deps.json
+C:\Users\user\Desktop\Gui\C#\Repos\ws-vs2019\TesteEnumeração\TesteEnumeração\bin\Debug\netcoreapp3.1\TesteEnumeração.runtimeconfig.json
+C:\Users\user\Desktop\Gui\C#\Repos\ws-vs2019\TesteEnumeração\TesteEnumeração\bin\Debug\netcoreapp3.1\TesteEnumeração.runtimeconfig.dev.json
+C:\Users\user\Desktop\Gui\C#\Repos\ws-vs2019\TesteEnumeração\TesteEnumeração\bin\Debug\netcoreapp3.1\TesteEnumeração.dll
+C:\Users\user\Desktop\Gui\C#\Repos\ws-vs2019\TesteEnumeração\TesteEnumeração\bin\Debug\netcoreapp3.1\TesteEnumeração.pdb
+C:\Users\user\Desktop\Gui\C#\Repos\ws-vs2019\TesteEnumeração\TesteEnumeração\obj\Debug\netcoreapp3.1\TesteEnumeração.csprojAssemblyReference.cache
+C:\Users\user\Desktop\Gui\C#\Repos\ws-vs2019\TesteEnumeração\TesteEnumeração\obj\Debug\netcoreapp3.1\TesteEnumeração.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\Gui\C#\Repos\ws-vs2019\TesteEnumeração\TesteEnumeração\obj\Debug\netcoreapp3.1\TesteEnumeração.AssemblyInfo.cs
+C:\Users\user\Desktop\Gui\C#\Repos\ws-vs2019\TesteEnumeração\TesteEnumeração\obj\Debug\netcoreapp3.1\TesteEnumeração.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Gui\C#\Repos\ws-vs2019\TesteEnumeração\TesteEnumeração\obj\Debug\netcoreapp3.1\TesteEnumeração.dll
+C:\Users\user\Desktop\Gui\C#\Repos\ws-vs2019\TesteEnumeração\TesteEnumeração\obj\Debug\netcoreapp3.1\TesteEnumeração.pdb
+C:\Users\user\Desktop\Gui\C#\Repos\ws-vs2019\TesteEnumeração\TesteEnumeração\obj\Debug\netcoreapp3.1\TesteEnumeração.genruntimeconfig.cache

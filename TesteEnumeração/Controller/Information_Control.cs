@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.Text;
 using TesteEnumeração.Entities;
 using TesteEnumeração.Entities.Enums;
-using TesteEnumeração.Controller.Lists;
-
 
 namespace TesteEnumeração.Controller
 {
@@ -16,7 +14,7 @@ namespace TesteEnumeração.Controller
             string name = Console.ReadLine();
             Console.Write("\nEnter the Client's email: ");
             string email = Console.ReadLine();
-            Console.WriteLine("\nEnter the Client's BirthDate (DD/MM/YYYY): ");
+            Console.Write("\nEnter the Client's BirthDate (DD/MM/YYYY): ");
             string[] dat = Console.ReadLine().Split('/');
             int day, month, year;
             day = Convert.ToInt32(dat[0]);
@@ -29,9 +27,9 @@ namespace TesteEnumeração.Controller
 
         public static void InsertProduct()
         {
-            Console.WriteLine("\nEnter Product's name: ");
+            Console.Write("\nEnter Product's name: ");
             string name = Console.ReadLine();
-            Console.WriteLine("\nEnter Product's price: ");
+            Console.Write("\nEnter Product's price: ");
             double price = Convert.ToDouble(Console.ReadLine());
             Product a = Create_Control.CreateProduct(name, price);
             List_Control.ProductList.Add(a);
@@ -52,7 +50,6 @@ namespace TesteEnumeração.Controller
                 Product product = List_Control.ProductList[id_product];
                 OrderItem a = Create_Control.CreateOrderItem(quantity, product);
                 Order.AddItems(a);
-                List_Control.UniqueListOrder(Order.Id, Order.Items);
             }
             else
             {
@@ -60,7 +57,7 @@ namespace TesteEnumeração.Controller
             }
         }
 
-        public static void InsertOrder()
+        public static Order InsertOrder()
         {
             DateTime moment = DateTime.Now;
             Console.WriteLine("Set Order's Client: ");
@@ -72,7 +69,10 @@ namespace TesteEnumeração.Controller
             Client client = List_Control.ClientList[id_client];
             Console.WriteLine("Enter Order's Id: ");
             int id = Convert.ToInt32(Console.ReadLine());
-            
+            Console.WriteLine("Enter the Order's situation(SENDING/PENDING_PAYMENT/DELIVERED/PROCESSING): ");
+            OrderStatus b = Enum.Parse<OrderStatus>(Console.ReadLine());
+            Order a = Create_Control.CreateOrder(moment, b, client, id);
+            return a;
         }
     }
 }
