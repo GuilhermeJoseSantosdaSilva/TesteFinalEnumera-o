@@ -41,14 +41,14 @@ namespace TesteEnumeração.Controller
             return a;
         }
 
-        public static Order CreateOrder(DateTime moment, List<OrderItem> items, OrderStatus status, Client client)
+        public static Order CreateOrder(DateTime moment, OrderStatus status, Client client, int id)
         {
             Order a = new Order()
             {
                 Moment = moment,
-                Items = items,
                 Status = status,
-                Client = client
+                Client = client,
+                Id = id
             };
             return a;
         }

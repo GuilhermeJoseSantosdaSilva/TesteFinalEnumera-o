@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using TesteEnumeração.Entities;
 using TesteEnumeração.Entities.Enums;
+using TesteEnumeração.Controller.Lists;
 
 
 namespace TesteEnumeração.Controller
@@ -50,7 +51,8 @@ namespace TesteEnumeração.Controller
                 int id_product = Convert.ToInt32(Console.ReadLine());
                 Product product = List_Control.ProductList[id_product];
                 OrderItem a = Create_Control.CreateOrderItem(quantity, product);
-                List_Control.UniqueListOrder(Order.Id)
+                Order.AddItems(a);
+                List_Control.UniqueListOrder(Order.Id, Order.Items);
             }
             else
             {
@@ -68,7 +70,9 @@ namespace TesteEnumeração.Controller
             }
             int id_client = Convert.ToInt32(Console.ReadLine());
             Client client = List_Control.ClientList[id_client];
-
+            Console.WriteLine("Enter Order's Id: ");
+            int id = Convert.ToInt32(Console.ReadLine());
+            
         }
     }
 }
