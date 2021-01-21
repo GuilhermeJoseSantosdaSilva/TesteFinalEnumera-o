@@ -6,9 +6,9 @@ using TesteEnumeração.Entities.Enums;
 
 namespace TesteEnumeração.Controller
 {
-    class Control
+    class Create_Control
     {
-        public Product CreateProduct(string name, double price)
+        public static Product CreateProduct(string name, double price)
         {
             Product a = new Product
             {
@@ -19,7 +19,7 @@ namespace TesteEnumeração.Controller
             return a;
         }
 
-        public OrderItem CreateOrderItem (int quantity, Product product)
+        public static OrderItem CreateOrderItem (int quantity, Product product)
         {
             OrderItem a = new OrderItem
             {
@@ -30,7 +30,7 @@ namespace TesteEnumeração.Controller
             return a;
         }
 
-        public Client CreateClient(string name, string email, DateTime birthday)
+        public static Client CreateClient(string name, string email, DateTime birthday)
         {
             Client a = new Client()
             {
@@ -40,7 +40,8 @@ namespace TesteEnumeração.Controller
             };
             return a;
         }
-        public Order CreateOrder(DateTime moment, List<OrderItem> items, OrderStatus status, Client client)
+
+        public static Order CreateOrder(DateTime moment, List<OrderItem> items, OrderStatus status, Client client)
         {
             Order a = new Order()
             {
