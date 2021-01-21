@@ -11,6 +11,7 @@ namespace TesteEnumeração.Entities
         public OrderStatus Status { get; set; }
         public List<OrderItem> Items { get; set; } = new List<OrderItem>();
         public Client Client { get; set; }
+        public int Id { get; set; }
 
         public void AddItems(OrderItem item)
         {
